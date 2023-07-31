@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def web(request):
-    d = {'name': 'VYSHNAVI', 'age': 18}
+    d = {'name': 'VYSHNAVI', 'age': 18, 'hobbies': ['painting', 'drawing']}
     return render(request, 'web.html', context=d)
 
 
